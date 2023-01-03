@@ -1,29 +1,88 @@
-body{ 
-    font-family: 'Raleway', sans-serif;
-    background: #8A2AE3 ;
-   /* background: linear-gradient(to top left, #10EFFC, #8A2AE3);*/
-   background: linear-gradient(to top left, #132B75, #620689);
+:root{--color1: #ff00ea;
+    --color2:#69f0ff;
+    --color3:#620689;
+    --color4:#132B75;
+}
+/*Main page styles*/
+.main{ 
+    background: #620689;
+    background: linear-gradient(to top left, var(--color4), var(--color3));
     background-repeat: no-repeat;}
-
-.container{
+.main, .about, .contact{  font-family: 'Raleway', sans-serif;}
+.container-main{
     height:100vh;
     color:white;
     text-align:center
 }
 .heading-name{
-    color: #69f0ff;
-    text-shadow: 0px 0px 10px #ff00ea;}
-.container p{
+    color: var(--color2);
+    text-shadow: 0px 0px 10px var(--color1);}
+.container-main p{
     font-size:1.5rem;
-padding-bottom:0.75rem;}
-a {
+    padding-bottom:0.75rem;}
+.btn-main {
     text-decoration: none;
     color:white;
     border: 2px solid white;
     padding:10px 20px;
     margin:0 auto;}
 
-a:hover{
+.btn-main:hover{
     background:#44e3ffd7;
     color:#ffffff;
+}
+/*About page styles*/
+.abt-prj-body{background:#F9F9FB;}
+
+.about, #projects{height:100%;}
+
+nav{background:var(--color4);}
+
+.nav-link{color: var(--color2);}
+.nav-link:hover{color:var(--color1);}
+.active{font-weight: bold;}
+
+.about-container{
+margin:0 auto;
+padding:60px 20px;}
+
+.about-section{
+    line-height: 1.5rem;
+}
+.heading-about,.tech-heading, .heading-prj, h2{color:var(--color3);}
+.tech{
+    margin:0 auto;
+    width:40%;
+    background:#F9F9FB;
+}
+.about-text{font-size:20px;}
+.tech-heading{font-size:30px;}
+i{
+    color:#620689;
+    font-size:27px;
+}
+.tech-list{font-size:1.5rem;}
+.heading-about{text-align: center;}
+
+
+@media(max-width:600px){
+    .tech{
+        margin:0 auto;
+        width:60%;
+    }
+    .nav-link{font-size:15px;
+    padding:10px;}
+    .justify-content-end{justify-content: center!important;}
+}
+@media(max-width:300px){
+    .tech{
+        margin:0 auto;
+        width:60%;
+    }
+    .nav-link{font-size:0.75rem;
+    padding:5px;}
+}
+/* Project styles*/
+#projects{
+  
 }
