@@ -169,4 +169,12 @@ a{  padding:10px;}
 @media(max-width:500px){
 .contact{margin:200px 20px;}
       }
-    
+/*Footer*/
+footer{
+    background:var(--color4);
+    text-align: center;
+}
+.cont-ic{opacity:50%;}
+.cont-ic:hover{opacity:100%;}
+.rock-on{color:var(--color2);}
+.icon-rock{width:20px;}
