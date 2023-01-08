@@ -17,43 +17,69 @@
 <body class="abt-prj-body">
     <nav class="nav d-flex justify-content-end p-2 text-uppercase sticky-top">
         <a class="nav-link" href="index.html" title="Home">Home</a>
-        <a class="nav-link active" aria-current="page" href="about.html" title="About Gab">About</a>
+        <a class="nav-link active" aria-current="page" href="#about" title="About Gab">About</a>
         <a class="nav-link" href="#projects" title="Gab's projects">Projects</a>
         <a class="nav-link" href="contact.html" title="Contact Gab">Contact</a>
       </nav>
-<div class="about"> 
+<div class="about" id="about"> 
 <h1 class="heading-about fw-bold fs-1 p-5">About</h1>
 <div class="container about-container">
     <div class="row">
         <div class="col-lg-6 about-section">
             <h2>Hi, I'm Gab!</h2>
-            <p class="about-text">I'm an aspiring front-end developer based in Europe.
+            <p class="about-text pe-3">An aspiring front-end developer based in Europe.
             I have recently discovered my passion for coding and I'm consistently working on improving my skills one project at a time.
-            I like to code things from scratch, and really enjoy bringing ideas to life in the browser.</p>
+            I like to code things from scratch, and really enjoy bringing ideas to life in the browser.
+            <br/>
+            When I am not writing code, I enjoy traveling, watching movies and petting all the good dogs and cats. 
+            I also know the lyrics to most Foo Fighters songs by heart.</p>
         </div>
         <div class="col-lg-6">
-             <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/180/original/cat-coding.gif?1672679308" alt="orange cat coding on laptop" class="img-fluid">
+             <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/180/original/cat-coding.gif?1672679308" alt="orange cat coding on laptop" class="img-fluid cat-img">
         </div>
     </div>
 </div>
 <div class="tech">
 <h3 class="tech-heading text-center pt-5">Technologies I have been working with:</h3>
-<div class="container tech-list p-5">
+<div class="container tech-list p-5 pt-4">
     <div class="row">
-        <div class="col-lg-4"><p><i class="fa-brands fa-html5"></i> HTML</p></div>
-        <div class="col-lg-4"><p><i class="fa-brands fa-css3-alt"></i> CSS</p></div>
-        <div class="col-lg-4"><p><i class="fa-brands fa-js"></i> JavaScript</p></div>
+        <div class="col-lg-3 pb-3"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/336/original/icons8-html-5-50.png?1672788751" class="icon"><p class="icon-p">HTML</p></div>
+        <div class="col-lg-3 pb-3"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/326/original/icons8-css3-100.png?1672787817" class="icon"><p class="icon-p">CSS</p></div>
+        <div class="col-lg-3 pb-3"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/327/original/icons8-javascript-100.png?1672787822" class="icon"><p class="icon-p">JavaScript</p></div>
+        <div class="col-lg-3 pb-3"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/328/original/icons8-bootstrap-100.png?1672787826" class="icon"><p class="icon-p">Bootstrap</p></div>
     </div>
     <div class="row">
-        <div class="col-lg-4"><p><i class="fa-brands fa-bootstrap"></i> Bootstrap</p></div>
-        <div class="col-lg-4"><p><i class="fa-brands fa-figma"></i> Figma</p></div>
-        <div class="col-lg-4"><p><i class="fa-brands fa-github"></i> GitHub</p></div>
+        <div class="col-lg-3 pt-3"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/337/original/icons8-api-64.png?1672788876" class="icon"><p class="icon-p">API</p></div>
+        <div class="col-lg-3 pt-3"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/331/original/icons8-github-100.png?1672787917" class="icon"><p class="icon-p">GitHub</p></div>
+        <div class="col-lg-3 pt-3"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/334/original/icons8-invision-100.png?1672788223" class="icon"><p class="icon-p">Invision</p></div>
+        <div class="col-lg-3 pt-3"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/335/original/icons8-netlify-100.png?1672788229" class="icon"><p class="icon-p">Hosting</p></div>
+     
     </div>          
 </div>  
 </div>
 <div id="projects" class="pt-5">
 <h1 class="heading-prj fw-bold fs-1 p-5 text-center">Projects</h1>
 
+<div class="container main-pjts">
+    <div class="row m-5 pjt-card">
+        <div class="col-md-6 p-0"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/806/original/tribute.png?1673130749" class="img-fluid pjt-img1"/></div>
+        <div class="col-md-6 pjt-dsrc "><h2 class="mb-3 pjt-heading">Tribute Page</h2><p>Multi-page website inspired by a freeCodeCamp project, built with HTML & CSS. </p>
+            <a href="https://monumental-baklava-de2ae8.netlify.app" target="_blank" class="pjt-link" title="View Tribute Page">View project</a>
+        </div>
+    </div>
+    <div class="row m-5 pjt-card">
+        <div class="col-md-6 pjt-dsrc"><h2 class="mb-3 pjt-heading">Kawasaki Landing Page</h2><p>Single-page website built with HTML, CSS and simple JS functionalities to create user interaction.</p>
+            <a href="https://luminous-souffle-1657ab.netlify.app/" target="_blank" class="pjt-link" title="View Landing Page">View project</a>
+        </div>
+        <div class="col-md-6 p-0"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/799/original/kawa.png?1673124840" class="img-fluid pjt-img2"/></div>
+    </div>
+    <div class="row m-5 pjt-card">
+        <div class="col-md-6 p-0"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/801/original/weather.png?1673124868" class="img-fluid pjt-img3"/></div>
+        <div class="col-md-6 pjt-dsrc"><h2 class="mb-3 pjt-heading">Weather Widget</h2><p>Weather forecast application with live API integration. Built with HTML, CSS, JavaScript, Bootstap. Used OpenWeatherMap API to get daily forecast and weather condition codes to coordinate backgrounds.</p>
+            <a href="https://starlit-cheesecake-db1104.netlify.app/" target="_blank" class="pjt-link" title="View Weather Widget">View project</a>
+        </div>
+    </div>
+</div>
 </div>
 </body>
 </html>
