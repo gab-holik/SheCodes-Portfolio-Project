@@ -2,10 +2,12 @@
     --color2:#69f0ff;
     --color3:#620689;
     --color4:#132B75;
+    --color5:#F9F9FB;
+    --bx-shadow: 1px 3px 10px #637ac6;
 }
 /*Main page styles*/
 .main{ 
-    background: #620689;
+    background: var(--color3);
     background: linear-gradient(to top left, var(--color4), var(--color3));
     background-repeat: no-repeat;}
 .main, .about, .contact{  font-family: 'Raleway', sans-serif;}
@@ -33,7 +35,7 @@
 }
 /*About page styles*/
 .abt-prj-body{
-    background:#F9F9FB;}
+    background:var(--color5);}
 
 .about, #projects{
     height:100%;}
@@ -62,7 +64,7 @@ nav{
 .tech{
     margin:0 auto;
     width:40%;
-    background:#F9F9FB;
+    background:var(--color5);
 }
 .about-text{
     font-size:20px;
@@ -114,7 +116,7 @@ nav{
 .pjt-card{
         border: 2px solid var(--color3);
         border-radius: 15px;
-        box-shadow: 1px 3px 10px #637ac6;
+        box-shadow: var(--bx-shadow);
 }
 .pjt-heading{
         padding-top:3rem;}
@@ -142,3 +144,29 @@ nav{
     .pjt-dsrc{padding-bottom:30px;}
 
 }
+/*Contact page style*/
+.contact-pg{
+    background: var(--color5);}
+.contact{
+    margin:200px auto;
+    max-width: 400px;
+    border: 1px solid var(--color3);
+    border-radius: 15px;
+    box-shadow: var(--bx-shadow);
+    padding:50px;
+    text-align: center;}
+.contact-heading{
+    text-transform: uppercase;
+    padding-bottom:1.5rem;}
+a{  padding:10px;}
+.icon{ 
+    width:35px;}
+.icon-mail{
+    width:25px;}
+.email{
+    display: inline;
+    color:var(--color3)}
+@media(max-width:500px){
+.contact{margin:200px 20px;}
+      }
+    
