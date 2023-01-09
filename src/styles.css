@@ -127,6 +127,15 @@ main{
         font-size:0.75rem;
         padding-left:3px;}
 }
+@media(max-height:400px){
+    .social{
+        top:50px;
+      }
+    .pb-5{
+        padding-bottom:1.5rem!important;
+    }
+
+}
 /*Project page style*/
 .main-pjts{
         max-width: 900px;}
