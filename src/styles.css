@@ -34,10 +34,33 @@
     color:#ffffff;
 }
 /*About page styles*/
+
+main{ 
+    display: flex;
+    gap: 15px;
+    flex-direction: row;}
+  .main-content{width:100%;}
+  .social{
+    align-self:flex-start;
+    position:sticky;
+    top:300px;
+    max-width: 40px;
+  }
+  .social-link{
+    color:var(--color4);
+    font-size: 2.3rem;
+    display: inline-block;
+    padding:20px;
+    text-shadow: 0 0 3px var(--color2);
+  }
+  .social-link:hover{
+    color:var(--color2);
+    text-shadow: 0 0 3px var(--color4);
+  }
 .abt-prj-body{
     background:var(--color5);}
 
-.about, #projects{
+.about{
     height:100%;}
 
 nav{
@@ -63,7 +86,7 @@ nav{
     color:var(--color3);}
 .tech{
     margin:0 auto;
-    width:40%;
+    width:45%;
     background:var(--color5);
 }
 .about-text{
@@ -82,10 +105,6 @@ nav{
 
 
 @media(max-width:600px){
-    .tech{
-        margin:0 auto;
-        width:60%;
-    }
     .nav-link{
         font-size:15px;
         padding:10px;}
@@ -95,12 +114,10 @@ nav{
         padding:0 20px;}
     .cat-img{
         padding-top:5px;}
+    .social-link{
+            font-size: 1.5rem;}
 }
 @media(max-width:300px){
-    .tech{
-        margin:0 auto;
-        width:60%;
-    }
     .nav-link{
         font-size:0.75rem;
         padding:5px;}
@@ -146,7 +163,10 @@ nav{
 }
 /*Contact page style*/
 .contact-pg{
-    background: var(--color5);}
+    background: var(--color5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;}
 .contact{
     margin:200px auto;
     max-width: 400px;
@@ -167,12 +187,13 @@ a{  padding:10px;}
     display: inline;
     color:var(--color3)}
 @media(max-width:500px){
-.contact{margin:200px 20px;}
+.contact{margin:150px 20px;}
       }
 /*Footer*/
 footer{
     background:var(--color4);
     text-align: center;
+    margin-top:auto;
 }
 .cont-ic{opacity:50%;}
 .cont-ic:hover{opacity:100%;}
