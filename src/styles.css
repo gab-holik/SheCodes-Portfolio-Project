@@ -5,12 +5,12 @@
     --color5:#F9F9FB;
     --bx-shadow: 1px 3px 10px #637ac6;
 }
-/*Main page styles*/
-.main{ 
+/*Homepage styles*/
+.home-page{ 
     background: var(--color3);
     background: linear-gradient(to top left, var(--color4), var(--color3));
     background-repeat: no-repeat;}
-.main, .about, .contact{  font-family: 'Raleway', sans-serif;}
+.home-page, .about, .contact{  font-family: 'Raleway', sans-serif;}
 .container-main{
     height:100vh;
     color:white;
@@ -34,34 +34,8 @@
     color:#ffffff;
 }
 /*About page styles*/
-
-main{ 
-    display: flex;
-    gap: 15px;
-    flex-direction: row;}
-  .main-content{width:100%;}
-  .social{
-    align-self:flex-start;
-    position:sticky;
-    top:300px;
-    max-width: 40px;
-  }
-  .social-link{
-    color:var(--color4);
-    font-size: 2.3rem;
-    display: inline-block;
-    padding:20px;
-    text-shadow: 0 0 3px var(--color2);
-  }
-  .social-link:hover{
-    color:var(--color2);
-    text-shadow: 0 0 3px var(--color4);
-  }
 .abt-prj-body{
     background:var(--color5);}
-
-.about{
-    height:100%;}
 
 nav{
     background:var(--color4);}
@@ -73,6 +47,32 @@ nav{
 .active{
     font-weight: bold;}
 
+main{ 
+    display: flex;
+    gap: 15px;
+    flex-direction: row;}
+
+.social{
+    align-self:flex-start;
+    position:sticky;
+    top:300px;
+    max-width: 40px;
+  }
+.social-link{
+    color:var(--color4);
+    font-size: 2.3rem;
+    display: inline-block;
+    padding:20px;
+    opacity:50%;
+  }
+.social-link:hover{
+    opacity:100%;
+  }
+.main-content{width:100%;}
+
+.about{
+    height:100%;}
+
 .about-container{
     margin:0 auto;
     padding:60px 20px;
@@ -82,16 +82,19 @@ nav{
     line-height: 1.5rem;
 }
 .cat-img{padding-top:3rem;}
-.heading-about,.tech-heading, .heading-prj, h2{
+.heading-about{
+    text-align: center;}
+.heading-about,.tech-heading, h2, .heading-project{
     color:var(--color3);}
+
+.about-text{
+        font-size:20px;
+        line-height: 1.5rem;}
 .tech{
     margin:0 auto;
     width:45%;
     background:var(--color5);
 }
-.about-text{
-    font-size:20px;
-    line-height: 1.5rem;}
 .tech-heading{
     font-size:30px;}
 .icon{
@@ -100,9 +103,6 @@ nav{
     font-size:1rem;
     display:inline-block;
     padding-left:8px;}
-.heading-about{
-    text-align: center;}
-
 
 @media(max-width:600px){
     .nav-link{
@@ -135,12 +135,12 @@ nav{
         border-radius: 15px;
         box-shadow: var(--bx-shadow);
 }
-.pjt-heading{
-        padding-top:3rem;}
+
 .pjt-img1, .pjt-img3{
         border-radius:15px 0 0 15px;}
 .pjt-img2{
         border-radius: 0 15px 15px 0;}
+.pjt-heading{padding-top:3rem;}
 .pjt-link{
         color:var(--color3);
         text-decoration: none;
@@ -177,8 +177,9 @@ nav{
     text-align: center;}
 .contact-heading{
     text-transform: uppercase;
-    padding-bottom:1.5rem;}
-a{  padding:10px;}
+    padding-bottom:1.5rem;
+    color:var(--color3);}
+.contact-link{  padding:10px;}
 .icon{ 
     width:35px;}
 .icon-mail{
@@ -192,10 +193,10 @@ a{  padding:10px;}
 /*Footer*/
 footer{
     background:var(--color4);
-    text-align: center;
+    text-align:center;
     margin-top:auto;
 }
-.cont-ic{opacity:50%;}
-.cont-ic:hover{opacity:100%;}
-.rock-on{color:var(--color2);}
-.icon-rock{width:20px;}
+.rock-on{
+    color:var(--color2);}
+.icon-rock{
+    width:20px;}
